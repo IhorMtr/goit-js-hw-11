@@ -15,7 +15,7 @@ form.addEventListener('submit', handleSubmit);
 function handleSubmit(event) {
   event.preventDefault();
   showLoader();
-
+  clearGallery();
   const inputValue = form.elements['search-text'].value;
   const requestedData = getImagesByQuery(inputValue);
 
